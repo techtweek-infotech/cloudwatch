@@ -30,6 +30,7 @@ Create an AWS credentials file with the AWS access key ID and shared access key 
 sudo vi /opt/aws/amazon-cloudwatch-agent/etc/common-config.toml
 
 #Update the file with this content:
+
 [credentials]
   shared_credential_file = "/home/bitnami/.aws/credentials"
 
