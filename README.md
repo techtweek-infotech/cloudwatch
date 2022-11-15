@@ -35,12 +35,15 @@ sudo vi /opt/aws/amazon-cloudwatch-agent/etc/common-config.toml
   shared_credential_file = "/home/bitnami/.aws/credentials"
 
 #Start the Amazon CloudWatch agent with the following command:
+
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s
 
 #Check that the agent is running with the following command:
+
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a status
 
 #Check that the agent is running with the following command:
+
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a status
  
 The above steps will also automatically configure the Amazon CloudWatch agent to automatically start on server reboot.
