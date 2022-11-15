@@ -7,6 +7,7 @@ Prerequisites: -
 3. IAM permission is required to perform IAM, EC2, and CloudWatch activities.
 
 Run the following commands at the console to download and install the Amazon CloudWatch agent on target machine:
+
 wget https://s3.amazonaws.com/amazoncloudwatch-agent/debian/amd64/latest/amazon-cloudwatch-agent.deb
 sudo dpkg -i -E ./amazon-cloudwatch-agent.deb
 Download and install the collectd daemon:
